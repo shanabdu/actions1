@@ -4,6 +4,8 @@ jobs:
   firstjob:
      runs-on: ubuntu-latest
      steps:
+     - name: Checkout Repo
+       uses: actions/checkout@v4
      - name: welcome Message
        run: echo "Hello World"
      - name: List Files
